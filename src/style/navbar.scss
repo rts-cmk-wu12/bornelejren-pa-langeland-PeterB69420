@@ -7,7 +7,6 @@ $secondary-color: #fff;
 $background-color: #f8f9fa;
 $hover-color: #c2c2c2;
 
-
 // styling
 .navbar-header {
     background-color: $primary-color;
@@ -16,6 +15,10 @@ $hover-color: #c2c2c2;
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid $primary-color;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 
     &__logo {
         display: flex;
@@ -87,7 +90,10 @@ $hover-color: #c2c2c2;
     background-color: $primary-color;
     color: $secondary-color;
     padding: 1rem 2rem;
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
   
     &__logo {
       display: flex;
@@ -172,4 +178,3 @@ $hover-color: #c2c2c2;
       }
     }
   }
-  

@@ -1,0 +1,56 @@
+// font family
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap');
+
+// color variables
+$primary-color: #d0000b;
+$secondary-color: #fff;
+$background-color: #f8f9fa;
+
+// gallery styling
+.gallery {
+    padding: 2rem;
+
+    &__content {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &__title {
+        font-family: 'Urbanist', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: $primary-color;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+
+        &-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: opacity 0.3s ease;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}
