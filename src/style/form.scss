@@ -42,6 +42,7 @@ $border-color: #ccc;
         margin: 0 auto;
     }
 
+
     &__container-title {
         font-family: 'Urbanist', sans-serif;
         font-size: 1.5rem;
@@ -55,6 +56,10 @@ $border-color: #ccc;
         font-family: 'Urbanist', sans-serif;
         font-weight: 400;
         margin-bottom: 1rem;
+    }
+
+    &__price {
+        font-weight: bold;
     }
 
     &__formular {

@@ -19,7 +19,7 @@ export default function Formular() {
         const existingData = JSON.parse(localStorage.getItem("sponsorList")) || [];
         const updatedData = [...existingData, formData];
         localStorage.setItem("sponsorList", JSON.stringify(updatedData));
-      };
+    };
     return (
         <>
             <section className="sponsor">
@@ -33,14 +33,14 @@ export default function Formular() {
                         <h3 className="sponsor__container-title">Børnesponsorat</h3>
                         <p className="sponsor__container-text">Hvis din virksomhed vælger at blive børnesponsor, dækker I omkostningerne for et
                             navngivet barns ophold og transport til og fra Langeland. Prisen pr. barn varierer fra lejr til
-                            lejr, men vi har fastsat en gennemsnitspris på kr. 4.000,- pr. barn for et ophold. Denne pris
+                            lejr, men vi har fastsat en gennemsnitspris på <span className="sponsor__price">kr. 4.000,-</span> pr. barn for et ophold. Denne pris
                             inkluderer transport, forplejning, forsikring, udflugter, adgangsbilletter til udflugtsmålene,
                             smågaver og slik til ét barn</p>
                     </div>
                     <div className="sponsor__container-item">
                         <h3 className="sponsor__container-title">Lejrsponsorat
                         </h3>
-                        <p className="sponsor__container-text">For kr. 2.000,- kan virksomheden blive lejrsponsor og være med til at dække alle
+                        <p className="sponsor__container-text">For <span className="sponsor__price">kr. 2.000,-</span> kan virksomheden blive lejrsponsor og være med til at dække alle
                             omkostningerne ved børnelejren, som bl.a. omfatter ejendommens drifts- og
                             vedligeholdelsesomkostninger samt eventuelle ekstra udgifter omkring en lejr, der f.eks.
                             kan være løn til specialuddannet personale.
@@ -49,8 +49,8 @@ export default function Formular() {
                     <div className="sponsor__container-item">
                         <h3 className="sponsor__container-title">Støtte til foreningen</h3>
                         <p className="sponsor__container-text">Virksomheder, der ønsker at støtte foreningens arbejde med et mindre beløb, kan vælge
-                            at blive diplomsponsorer. Af administrative årsager skal der minimum støttes med kr.
-                            1.000,- for at man kan modtage et trykt diplom til ophængning i virksomheden, men alle
+                            at blive diplomsponsorer. Af administrative årsager skal der minimum støttes med
+                            <span className="sponsor__price"> kr. 1.000,-</span> for at man kan modtage et trykt diplom til ophængning i virksomheden, men alle
                             støttebeløb - store som små - er naturligvis velkomne.
                         </p>
                     </div>
