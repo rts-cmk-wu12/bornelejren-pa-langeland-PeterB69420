@@ -15,13 +15,5 @@ $secondary-color: #fff;
     flex-direction: column;
     position: absolute;
     width: 100%;
-
-
-    &__copyright {
-        font-family: 'Urbanist', sans-serif;
-        text-align: center;
-        align-items: center;
-        color: $secondary-color;
-        margin-bottom: 1rem;
-    }
+    
 }
