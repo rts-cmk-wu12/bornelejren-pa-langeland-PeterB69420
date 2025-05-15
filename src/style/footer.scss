@@ -10,22 +10,18 @@ $secondary-color: #fff;
     background-color: $primary-color;
     color: $secondary-color;
     padding: 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    justify-content: center;
-    align-items: start;
     font-family: 'Urbanist', sans-serif;
 
     &__content {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         gap: 1rem;
     }
 
-    &__contact,
-    &__social {
-        text-align: center;
+    &__contact {
+        
 
         &-title {
             font-family: 'Urbanist', sans-serif;
@@ -46,9 +42,15 @@ $secondary-color: #fff;
         }
     }
 
+    &__social {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
     &__icons {
         display: flex;
         justify-content: center;
+        padding: 1rem;
         gap: 1rem;
 
         .footer__icon {
@@ -61,5 +63,13 @@ $secondary-color: #fff;
                 
             }
         }
+    }
+
+    &__camp {
+        font-family: 'Urbanist', sans-serif;
+        font-size: 1rem;
+        color: $secondary-color;
+
+    
     }
 }

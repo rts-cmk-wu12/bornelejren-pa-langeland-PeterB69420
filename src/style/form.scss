@@ -3,6 +3,7 @@
 
 // color variables
 $primary-color: #d0000b;
+$hover-color: #9d0008;
 $secondary-color: #fff;
 $background-color: #f8f9fa;
 $border-color: #ccc;
@@ -116,7 +117,7 @@ $border-color: #ccc;
         transition: background-color 0.3s ease;
 
         &:hover {
-            background-color: darken($primary-color, 5%);
+            background-color: $hover-color;
         }
     }
 }

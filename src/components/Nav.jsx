@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa"; // Import icons
 
 export default function Nav() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -24,10 +25,9 @@ export default function Nav() {
                 </ul>
             </nav>
 
-            <div className={`navbar-header__burger ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
-                <div className="line"></div>    
-                <div className="line"></div>
-                <div className="line"></div>
+            
+            <div className="navbar-header__burger" onClick={toggleMenu}>
+                {menuOpen ? <FaTimes size={24} color="#fff" /> : <FaBars size={24} color="#fff" />}
             </div>
         </header>
     );

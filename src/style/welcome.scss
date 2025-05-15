@@ -18,6 +18,7 @@ $secondary-color: #fff;
         width: 100%;
         max-width: 920px;
         margin: 0 auto;
+        padding: 0 1rem;
     }
 
     &__title {
@@ -28,6 +29,14 @@ $secondary-color: #fff;
         font-weight: 700;
         text-transform: uppercase;
         padding: 1rem 0;
+
+        @media (max-width: 768px) {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 1.2rem;
+        }
     }
 
     &__text {
@@ -35,6 +44,14 @@ $secondary-color: #fff;
         font-family: 'Urbanist', sans-serif;
         font-weight: 400;
         margin: 0.5rem 0;
+
+        @media (max-width: 768px) {
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 0.8rem;
+        }
     }
 
     &__text-span {
@@ -47,5 +64,13 @@ $secondary-color: #fff;
         width: 100%;
         height: auto;
         margin: 2rem 0;
+
+        @media (max-width: 768px) {
+            margin: 1.5rem 0;
+        }
+
+        @media (max-width: 480px) {
+            margin: 1rem 0;
+        }
     }
 }

@@ -3,6 +3,7 @@
 
 // color variables
 $primary-color: #d0000b;
+$hover-color: #9d0008;
 $secondary-color: #fff;
 
 
@@ -29,7 +30,7 @@ $secondary-color: #fff;
         font-family: 'Urbanist', sans-serif;
         font-size: 2rem;
         color: $secondary-color;
-        text-transform: uppercase;
+        text-transform: capitalize;
     }
 
     &__welcome-text {
@@ -51,7 +52,7 @@ $secondary-color: #fff;
         margin-top: 20px;
         transition: background-color 0.3s ease;
         &:hover {
-            background-color: darken($primary-color, 10%);
+            background-color: $hover-color;
         }
     }
 
@@ -60,10 +61,45 @@ $secondary-color: #fff;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: auto;
+        width: 100%;
         height: auto;
         min-width: 100%;
         min-height: 100%;
+        object-fit: cover;
         z-index: -1;
+    }
+
+    @media (max-width: 768px) {
+        height: 60vh;
+
+        &__welcome-title {
+            font-size: 1.5rem;
+        }
+
+        &__welcome-text {
+            font-size: 0.9rem;
+        }
+
+        &__welcome-button {
+            font-size: 0.9rem;
+            padding: 8px 16px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        height: 50vh;
+
+        &__welcome-title {
+            font-size: 1.2rem;
+        }
+
+        &__welcome-text {
+            font-size: 0.8rem;
+        }
+
+        &__welcome-button {
+            font-size: 0.8rem;
+            padding: 6px 12px;
+        }
     }
 }

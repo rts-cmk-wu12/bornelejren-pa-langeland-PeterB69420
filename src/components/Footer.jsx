@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="footer">
                 <div className="footer__content">
                     <div className="footer__contact">
-                        <h2 className="footer__contact-title">Kontakt</h2>
+                        <h2 className="footer__contact-title">Kontakt:</h2>
                         <ul className="footer__contact-list">
                             <li className="footer__contact-item">Knud Bro Alle 1, st. mf.</li>
                             <li className="footer__contact-item">3660 Stenløse</li>
@@ -20,18 +20,18 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className="footer__social">
-                        <h2 className="footer__social-title">Følg os</h2>
+                        <h2 className="footer__social-title">Følg os:</h2>
                         <div className="footer__icons">
-                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="footer__icon" aria-label="Facebook">
+                            <a href="https://facebook.com" target="_blank" rel="" className="footer__icon" aria-label="Facebook">
                                 <FaFacebookF />
                             </a>
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="footer__icon" aria-label="Instagram">
+                            <a href="https://instagram.com" target="_blank" rel="" className="footer__icon" aria-label="Instagram">
                                 <FaInstagram />
                             </a>
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="footer__icon" aria-label="Twitter">
+                            <a href="https://twitter.com" target="_blank" rel="" className="footer__icon" aria-label="Twitter">
                                 <FaTwitter />
                             </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="footer__icon" aria-label="LinkedIn">
+                            <a href="https://linkedin.com" target="_blank" rel="" className="footer__icon" aria-label="LinkedIn">
                                 <FaLinkedinIn />
                             </a>
                         </div>
