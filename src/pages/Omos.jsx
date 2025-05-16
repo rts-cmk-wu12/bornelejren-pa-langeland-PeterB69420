@@ -54,6 +54,19 @@ export default function Omos() {
                             </div>
                         </div>
                     </section>
+                    <section className="meaning">
+                        <div className="meaning__content">
+                            <div className="meaning__container">
+                                <h2 className="meaning__title">Hvad er meningen med lejren?</h2>
+                                <div className="meaning__container-item">
+                                    <p className="meaning__text">Meningen med lejrene er, at give børnene et ophold på vores gamle bondegård med fokus på fællesskab, natur, kultur og gode fælles oplevelser, da mange af børnene er fattige på oplevelser.</p>
+                                </div>
+                                <div className="meaning__container-item">
+                                    <p className="meaning__text">For nogle af børnene er opholdet det tætteste de kommer på en ferie, da de ikke kommer på ferie med deres egne familier, ofte pga. få ressourcer i familien, både menneskelige og økonomiske.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </main>
             <Footer />

@@ -46,6 +46,16 @@ $secondary-color: #fff;
     justify-content: center;
     padding: 2rem;
 
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 920px;
+        margin: 0 auto;
+    }
+
     &__title {
         font-family: 'Urbanist', sans-serif;
         font-size: 2rem;
@@ -62,4 +72,40 @@ $secondary-color: #fff;
         font-weight: 400;
         margin-bottom: 1rem;
     }
+}
+
+.meaning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 920px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-family: 'Urbanist', sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        color: $primary-color;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        text-align: center;
+        font-family: 'Urbanist', sans-serif;
+        margin-bottom: 1rem;
+    }
+
+    
 }
