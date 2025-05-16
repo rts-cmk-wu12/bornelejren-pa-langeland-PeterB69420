@@ -1,0 +1,76 @@
+// font family
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+// color variables
+$primary-color: #d0000b;
+$secondary-color: #fff;
+
+// styling
+.footer {
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: 2rem;
+    gap: 2rem;
+    font-family: 'Urbanist', sans-serif;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__contact {
+        
+
+        &-title {
+            font-family: 'Urbanist', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        &-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            &-item {
+                font-family: 'Urbanist', sans-serif;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &__social {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        gap: 1rem;
+
+        .footer__icon {
+            font-size: 1.5rem;
+            color: $secondary-color;
+            transition: transform 0.3s ease, color 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+                
+            }
+        }
+    }
+
+    &__camp {
+        font-family: 'Urbanist', sans-serif;
+        font-size: 1rem;
+        color: $secondary-color;
+
+    
+    }
+}
+

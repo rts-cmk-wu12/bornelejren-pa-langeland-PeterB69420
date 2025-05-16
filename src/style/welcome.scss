@@ -1,0 +1,76 @@
+// font family
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+// color variables
+$primary-color: #d0000b;
+$secondary-color: #fff;
+
+
+// styling
+
+.welcome {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    &__title {
+        font-family: 'Urbanist', sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        color: $primary-color;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 1rem 0;
+
+        @media (max-width: 768px) {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 1.2rem;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: 400;
+        margin: 0.5rem 0;
+
+        @media (max-width: 768px) {
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 0.8rem;
+        }
+    }
+
+    &__text-span {
+        font-weight: bold;
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin: 2rem 0;
+
+        @media (max-width: 768px) {
+            margin: 1.5rem 0;
+        }
+
+        @media (max-width: 480px) {
+            margin: 1rem 0;
+        }
+    }
+}
