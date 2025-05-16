@@ -7,74 +7,120 @@ $secondary-color: #fff;
 $background-color: #f8f9fa;
 $hover-color: #c2c2c2;
 
-
 // styling
 .navbar-header {
-    background-color: $primary-color;
-    padding: 1rem 2rem;
+  background-color: $primary-color;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid $primary-color;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  &__logo {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid $primary-color;
 
-    &__logo {
-        display: flex;
-        align-items: center;
+    img {
+      height: 50px;
+      margin-right: 1rem;
+    }
+  }
 
-        img {
-            height: 50px;
-            margin-right: 1rem;
-        }
+  &__title {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 3rem;
+    color: $secondary-color;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 2rem;
+    font-family: 'Urbanist', sans-serif;
+  }
+  
+  
+
+  &__item {
+    font-size: 1.2rem;
+    color: $secondary-color;
+    transition: color 0.3s;
+  }
+
+  &__item {
+    position: relative;
+    font-size: 1.2rem;
+    color: $secondary-color;
+    transition: color 0.3s;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 0;
+      height: 2px;
+      background-color: $secondary-color;
+      transition: width 0.3s ease-in-out;
     }
 
-    &__title {
-        font-family: 'Urbanist', sans-serif;
-        font-size: 3rem;
-        color: $secondary-color;
-        font-weight: 700;
-        text-transform: uppercase;
+    &:hover {
+      cursor: pointer;
+      color: $secondary-color;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+}
+
+// burger menu
+.navbar-header {
+
+
+  &__nav {
+    @media (max-width: 768px) {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: $primary-color;
+      padding: 1rem 2rem;
+      z-index: 10;
     }
 
-    &__list {
-        display: flex;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        gap: 2rem;
-        font-family: 'Urbanist', sans-serif;
+    &.open {
+      display: block;
+    }
+  }
+
+  &__list {
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+
+
+  &__burger {
+    display: none;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+      display: block;
     }
 
-    &__item {
-        font-size: 1.2rem;
-        color: $secondary-color;   
-        transition: color 0.3s;
-    }
-
-    &__item {
-        position: relative;
-        font-size: 1.2rem;
-        color: $secondary-color;   
-        transition: color 0.3s;
-
-        &::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -2px;
-            width: 0;
-            height: 2px;
-            background-color: $secondary-color;
-            transition: width 0.3s ease-in-out;
-        }
-
-        &:hover {
-            cursor: pointer;
-            color: $secondary-color;
-
-            &::after {
-                width: 100%;
-            }
-        }
-    }
-
+  }
 }

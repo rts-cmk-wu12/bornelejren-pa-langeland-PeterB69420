@@ -3,6 +3,7 @@
 
 // color variables
 $primary-color: #d0000b;
+$hover-color: #9d0008;
 $secondary-color: #fff;
 
 // styling
@@ -13,6 +14,7 @@ $secondary-color: #fff;
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    padding-top: 8rem;
 
     &__title {
         font-family: 'Urbanist', sans-serif;
@@ -35,22 +37,5 @@ $secondary-color: #fff;
        font-family: 'Urbanist', sans-serif;
        font-weight: bold;
        padding: 0.5rem;
-    }
-
-    &__button {
-        margin-top: 1rem;
-        font-family: 'Urbanist', sans-serif;
-        font-weight: 400;
-        background-color: $primary-color;
-        color: $secondary-color;
-        padding: 0.5rem 1rem;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-
-        &:hover {
-            background-color: darken($primary-color, 5%);
-        }
     }
 }

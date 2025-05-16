@@ -24,15 +24,7 @@ export default function SponsorOverview() {
                     <p className="sponsor-overview__detail">{sponsor.companyName}</p>
                 </div>
             ))}
-            <button
-                className="sponsor-overview__button"
-                onClick={() => {
-                    localStorage.removeItem("sponsorList");
-                    setSponsorList([]);
-                }}
-            >
-                Slet alle sponsorer
-            </button>
+           
         </section>
     );
 }
