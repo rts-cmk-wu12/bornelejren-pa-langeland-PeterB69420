@@ -36,7 +36,17 @@ $secondary-color: #fff;
         margin: 0.5rem 0;
     }
 
-
+    @media (max-width: 768px) {
+        &__container {
+            padding-top: 5rem;
+        }
+        &__title {
+            font-size: 1.5rem;
+        }
+        &__text {
+            font-size: 0.9rem;
+        }
+    }
 }
 
 .help {
@@ -72,6 +82,15 @@ $secondary-color: #fff;
         font-weight: 400;
         margin-bottom: 1rem;
     }
+
+    @media (max-width: 768px) {
+        &__title {
+            font-size: 1.5rem;
+        }
+        &__text {
+            font-size: 0.9rem;
+        }
+    }
 }
 
 .meaning {
@@ -79,7 +98,7 @@ $secondary-color: #fff;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 1rem;
 
     &__container {
         display: flex;
@@ -107,5 +126,12 @@ $secondary-color: #fff;
         margin-bottom: 1rem;
     }
 
-    
+    @media (max-width: 768px) {
+        &__title {
+            font-size: 1.5rem;
+        }
+        &__text {
+            font-size: 0.9rem;
+        }
+    }
 }
